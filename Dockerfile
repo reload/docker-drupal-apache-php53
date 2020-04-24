@@ -1,4 +1,4 @@
-FROM ubuntu:12.04
+FROM ubuntu:20.04
 MAINTAINER Mads H. Danquah <mads@danquah.dk>
 
 VOLUME ["/var/www"]
