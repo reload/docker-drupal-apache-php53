@@ -1,0 +1,39 @@
+version: 2
+updates:
+- package-ecosystem: docker
+  directory: "/"
+  schedule:
+    interval: daily
+    time: '04:00'
+    timezone: Europe/Copenhagen
+  open-pull-requests-limit: 10
+  assignees:
+  - arnested
+  ignore:
+  - dependency-name: ubuntu
+    versions:
+    - ">= 12.10.a, < 12.11"
+  - dependency-name: ubuntu
+    versions:
+    - ">= 13.a, < 14"
+  - dependency-name: ubuntu
+    versions:
+    - ">= 14.a, < 15"
+  - dependency-name: ubuntu
+    versions:
+    - ">= 15.a, < 16"
+  - dependency-name: ubuntu
+    versions:
+    - ">= 16.a, < 17"
+  - dependency-name: ubuntu
+    versions:
+    - ">= 17.a, < 18"
+  - dependency-name: ubuntu
+    versions:
+    - ">= 18.a, < 19"
+  - dependency-name: ubuntu
+    versions:
+    - ">= 19.a, < 20"
+  - dependency-name: ubuntu
+    versions:
+    - ">= 20.a, < 21"
